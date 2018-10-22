@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html>
+<title>Mikumikumi</title>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="keywords" content="MIKU,VOCALOID,HATSUNE MIKU PROJECT DIVA SERIES,ILLUSTRATION">
+    <meta name="description" content="Hope all the people can find something making you guys enjoy here （〃＾∇＾）o_彡☆">
+    <meta name="author" conten="Zihan Zhong">
+    <meta name="viewpoint" content="width=device-width, inital-sacle=1.0">
+    <link rel="icon" type="image" href="./images/LogoMikumikumi.png">
+    <link rel="stylesheet" href="Photo_Gallery.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <!--Navigation bar-->
+    <header>
+        <ul>
+            <li style="margin-left: 10px"><a href="Vocaloid.html">Vocaloid</a></li>
+            <li><a href="ProjectDIVASeries.html">ProjectDIVASeries</a></li>
+            <li><a href="Mikumikudance.html">Mikumikudance</a></li>
+            <li><a href="Photo_Gallery.html">Photo_Gallery</a></li>
+            <li style="float:right; margin-right: 30px; "><a href="Contact.html">Contact</a></li>
+            <li style="float:right;"><a href="HomePage.html">Home</a></li>
+        </ul>
+    </header>
+
+    <div id="containerT">
+        <div id="TMiku">
+            <div class="mySlides">
+                <img src="./images/PG/0.jpeg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <img src="./images/PG/1.jpeg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <img src="./images/PG/2.jpeg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <img src="./images/PG/3.jpeg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <img src="./images/PG/4.jpeg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <img src="./images/PG/5.jpeg" style="width:100%">
+            </div>
+
+            <div class="row">
+                <div class="column">
+                    <img class="demo cursor" src="./images/PG/0.jpeg" style="width:100%" onclick="currentSlide(1)">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="./images/PG/1.jpeg" style="width:100%" onclick="currentSlide(2)">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="./images/PG/2.jpeg" style="width:100%" onclick="currentSlide(3)">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="./images/PG/3.jpeg" style="width:100%" onclick="currentSlide(4)">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="./images/PG/4.jpeg" style="width:100%" onclick="currentSlide(5)">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="./images/PG/5.jpeg" style="width:100%" onclick="currentSlide(6)">
+                </div>
+            </div>
+        </div>
+
+        <hr>
+    </div>
+
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("demo");
+            var captionText = document.getElementById("caption");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            captionText.innerHTML = dots[slideIndex - 1].alt;
+        }
+    </script>
+
+    <!-- Bottom PhoG-->
+    <div class="main" style="margin-top: 6%">
+
+        <div id="myBtnContainer">
+            <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+            <button class="btn" onclick="filterSelection('miku')"> Miku</button>
+            <button class="btn" onclick="filterSelection('luka')"> Luka</button>
+            <button class="btn" onclick="filterSelection('rin')"> Rin & Ren</button>
+            <button class="btn" onclick="filterSelection('meiko')"> Meiko & Kaito</button>
+            <button class="btn" onclick="filterSelection('teto')"> Teto</button>
+        </div>
+
+        <!-- Portfolio Gallery Grid -->
+        <div class="row">
+            <div class="column miku">
+                <div class="content">
+                    <div id="img-boxH">
+                        <a href="https://www.pixiv.net/member_illust.php?mode=medium&illust_id=28035480"><img src="./images/PG/6.png"
+                                alt="Miku" style="width:100%"></a>
+                    </div>
+                    <h4>深海<br>By Rella</h4>
+                    <p>ID=28035480</p>
+                </div>
+            </div>
+            <div class="column miku">
+                <div class="content">
+                    <div id="img-boxH">
+                        <a href="https://www.pixiv.net/member_illust.php?mode=medium&illust_id=64761443"><img src="./images/PG/7.png"
+                                alt="Miku" style="width:100%"></a>
+                    </div>
+                    <h4>初嵐<br>By Rella</h4>
+                    <p>ID=64761443</p>
+                </div>
+            </div>
+            <div class="column miku">
+                <div class="content">
+                    <div id="img-boxH">
+                        <a href="https://www.pixiv.net/member_illust.php?mode=medium&illust_id=32879791"><img src="./images/PG/9.png"
+                                alt="Miku" style="width:100%"></a>
+
+
+                    </div>
+                    <h4>和服ミク<br>米っち</h4>
+                    <p>ID=32879791</p>
+                </div>
+            </div>
+            <div class="column miku">
+                <div class="content">
+                    <div id="img-boxV">
+                        <a href="https://www.pixiv.net/member_illust.php?mode=medium&illust_id=53727780"><img src="./images/PG/8.png"
+                                alt="Miku" style="width:100%"></a>
+
+                    </div>
+                    <h4>狐の嫁入り<br>藤原</h4>
+                    <p>ID=53727780</p>
+                </div>
+            </div>
+            <div class="column miku">
+                <div class="content">
+                    <div id="img-boxV">
+                        <a href="https://www.pixiv.net/member_illust.php?mode=medium&illust_id=58631699"><img src="./images/PG/10.png"
+                                alt="Miku" style="width:100%"></a>
+
+                    </div>
+                    <h4>miku 哥特~~<br>千夜QYS3</h4>
+                    <p>ID=58631699</p>
+                </div>
+            </div>
+            <div class="column miku">
+                <div class="content">
+                    <div id="img-boxV">
+                        <a href="https://www.pixiv.net/member_illust.php?mode=medium&illust_id=63660033"><img src="./images/PG/11.png"
+                                alt="Miku" style="width:100%"></a>
+
+                    </div>
+                    <h4>Miku - Travel<br>ATDAN-</h4>
+                    <p>ID=63660033</p>
+                </div>
+            </div>
+            <!--Luka-->
+            <div class="column luka">
+                <div class="content">
+                    <div id="img-boxH">
+                        <a href="https://www.pixiv.net/member_illust.php?mode=medium&illust_id=57281477"><img src="./images/PG/12.png"
+                                alt="Luka" style="width:100%"></a>
+
+                    </div>
+                    <h4>Just Be Friends<br>saberiii</h4>
+                    <p>ID=57281477</p>
+                </div>
+            </div>
+            <div class="column luka">
+                <div class="content">
+                    <div id="img-boxH">
+                        <a href="https://www.pixiv.net/member_illust.php?mode=medium&illust_id=7361220"><img src="./images/PG/13.png"
+                                alt="Luka" style="width:100%"></a>
+
+                    </div>
+                    <h4>ルカブーケ<br>笹森トモエ</h4>
+                    <p>ID=7361220</p>
+                </div>
+            </div>
+            <div class="column luka">
+                <div class="content">
+                    <div id="img-boxH">
+                        <a href="https://www.pixiv.net/member_illust.php?mode=medium&illust_id=49491396"><img src="./images/PG/14.png"
+                                alt="Luka" style="width:100%"></a>
+
+                    </div>
+                    <h4>夕焼け<br> 木shiyo</h4>
+                    <p>ID=49491396</p>
+                </div>
+            </div>
+            <div class="column luka">
+                <div class="content">
+                    <div id="img-boxV">
+                        <a href="https://www.pixiv.net/member_illust.php?mode=medium&illust_id=42803932"><img src="./images/PG/15.png"
+                                alt="Luka" style="width:100%"></a>
+
+                    </div>
+                    <h4>書店委託のお知らせ<br>DomotoLain</h4>
+                    <p>ID=42803932</p>
+                </div>
+            </div>
+            <div class="column luka">
+                <div class="content">
+                    <div id="img-boxV">
+                        <a href="https://www.pixiv.net/member_illust.php?mode=medium&illust_id=58186090"><img src="./images/PG/16.png"
+                                alt="Luka" style="width:100%"></a>
+
+                    </div>
+                    <h4>私の女王さま<br>okingjo</h4>
+                    <p>ID=49491396</p>
+                </div>
+            </div>
+            <div class="column luka">
+                <div class="content">
+                    <div id="img-boxV">
+                        <a href="https://www.pixiv.net/member_illust.php?mode=medium&illust_id=56949422"><img src="./images/PG/17.png"
+                                alt="Luka" style="width:100%"></a>
+
+                    </div>
+                    <h4>菓子の上の最後の仕上げ<br>okingjo</h4>
+                    <p>ID=56949422</p>
+                </div>
+            </div>
+            <!--Rin-->
+            <div class="column rin">
+                <div class="content">
+                    <div id="img-boxH">
+                        <a href="https://www.pixiv.net/member_illust.php?mode=medium&illust_id=16519840"><img src="./images/PG/18.png"
+                                alt="Rin" style="width:100%"></a>
+
+                    </div>
+                    <h4>RIN/LEN-Append<br>オサム</h4>
+                    <p>ID=16519840</p>
+                </div>
+            </div>
+
+            <!--meiko-->
+            <div class="column meiko">
+                <div class="content">
+                    <div id="img-boxH">
+                        <a href="https://www.pixiv.net/member_illust.php?mode=medium&illust_id=39556083"><img src="./images/PG/22.png"
+                                alt="Rin" style="width:100%"></a>
+
+                    </div>
+                    <h4>恒久の花<br>秋吉</h4>
+                    <p>ID=39556083</p>
+                </div>
+            </div>
+            <!--teto-->
+            <div class="column teto">
+                <div class="content">
+                    <div id="img-boxH">
+                        <a href="https://www.pixiv.net/member_illust.php?mode=medium&illust_id=5376823"><img src="./images/PG/20.png"
+                                alt="Rin" style="width:100%"></a>
+
+                    </div>
+                    <h4>重音テト<br>貝殼子</h4>
+                    <p>ID=5376823</p>
+                </div>
+            </div>
+            <div class="column rin">
+                <div class="content">
+                    <div id="img-boxV">
+                        <a href="https://www.pixiv.net/member_illust.php?mode=medium&illust_id=57281459"><img src="./images/PG/19.png"
+                                alt="Rin" style="width:100%"></a>
+
+                    </div>
+                    <h4>幸福な死を<br>litsvn</h4>
+                    <p>ID=57281459</p>
+                </div>
+            </div>
+            <div class="column meiko">
+                <div class="content">
+                    <div id="img-boxV">
+                        <a href="https://www.pixiv.net/member_illust.php?mode=medium&illust_id=65787579"><img src="./images/PG/23.png"
+                                alt="Rin" style="width:100%"></a>
+
+                    </div>
+                    <h4>MEIKOさん13周年！<br>daidou</h4>
+                    <p>ID=65787579</p>
+                </div>
+            </div>
+            <div class="column teto">
+                <div class="content">
+                    <div id="img-boxV">
+                        <a href="https://www.pixiv.net/member_illust.php?mode=medium&illust_id=34933153"><img src="./images/PG/21.png"
+                                alt="Rin" style="width:100%"></a>
+
+                    </div>
+                    <h4>テトリツ<br>柚希きひろ</h4>
+                    <p>ID=34933153</p>
+                </div>
+            </div>
+            <div class="column rin">
+                <div class="content">
+                    <div id="img-boxV">
+                        <a href="https://www.pixiv.net/member_illust.php?mode=medium&illust_id=26030401"><img src="./images/PG/24.png"
+                                alt="Rin" style="width:100%"></a>
+
+                    </div>
+                    <h4>Gemini<br>Nidy-2D-</h4>
+                    <p>ID=26030401</p>
+                </div>
+            </div>
+        <div class="column luka">
+            <div class="content">
+                <div id="img-boxV">
+                    <a href="https://www.pixiv.net/member_illust.php?mode=medium&illust_id=41262338"><img src="./images/PG/25.png"
+                            alt="Luka" style="width:100%"></a>
+
+                </div>
+                <h4>ルカさんへ！<br>由杞</h4>
+                <p>ID=41262338</p>
+            </div>
+        </div>
+        <div class="column miku">
+            <div class="content">
+                <div id="img-boxV">
+                    <a href="https://www.pixiv.net/member_illust.php?mode=medium&illust_id=58732917"><img src="./images/PG/26.png"
+                            alt="Miku" style="width:100%"></a>
+
+                </div>
+                <h4>OCEAN ECHO<br>Miv4t</h4>
+                <p>ID=58732917</p>
+            </div>
+        </div>
+        <!-- END GRID -->
+    </div>
+    </div>
+
+    <!-- END MAIN -->
+
+    <script>
+        filterSelection("all")
+        function filterSelection(c) {
+            var x, i;
+            x = document.getElementsByClassName("column");
+            if (c == "all") c = "";
+            for (i = 0; i < x.length; i++) {
+                w3RemoveClass(x[i], "show");
+                if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+            }
+        }
+
+        function w3AddClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                if (arr1.indexOf(arr2[i]) == -1) { element.className += " " + arr2[i]; }
+            }
+        }
+
+        function w3RemoveClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                while (arr1.indexOf(arr2[i]) > -1) {
+                    arr1.splice(arr1.indexOf(arr2[i]), 1);
+                }
+            }
+            element.className = arr1.join(" ");
+        }
+
+
+        // Add active class to the current button (highlight it)
+        var btnContainer = document.getElementById("myBtnContainer");
+        var btns = btnContainer.getElementsByClassName("btn");
+        for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", function () {
+                var current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace(" active", "");
+                this.className += " active";
+            });
+        }
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Back to Top-->
+    <div id="gotop">
+        <div class="arrow"></div>
+        <div class="stick"></div>
+    </div>
+
+    <!-- for back to top-->
+    <script src="http://cdn.staticfile.org/jquery/1.11.1-rc2/jquery.min.js"></script>
+    <script>
+        $(function () {
+
+            $(window).scroll(function () {  //trigger when the screen scrolls
+                var scrollt = document.documentElement.scrollTop + document.body.scrollTop; //获取滚动后的高度
+
+                if (scrollt > 200) {  //scroo > 200
+
+                    $("#gotop").fadeIn(400); //fade in 
+
+                } else {
+
+                    $("#gotop").stop().fadeOut(400); //if not then fade out
+
+                }
+
+            });
+
+            $("#gotop").click(function () { //when click the button back to top
+
+                $("html,body").animate({ scrollTop: "0px" }, 200);
+
+            });
+
+        });
+    </script>
+
+
+
+
+    <!-- Background images-->
+    <section class="hidden-xs">
+        <ul class="cb-slideshow">
+            <li><span style="background-image: url('./images/bg/4.png')"></span></li>
+            <li><span style="background-image: url('./images/bg/V_A.png')"></span></li>
+            <li><span style="background-image: url('./images/bg/11.png')"></span></li>
+            <li><span style="background-image: url('./images/bg/5.png')"></span></li>
+            <li><span style="background-image: url('./images/bg/V_C.png')"></span></li>
+            <li><span style="background-image: url('./images/bg/8.png')"></span></li>
+        </ul>
+    </section>
+</body>
+
+<!-- footer-->
+<div id="footer">
+    <a>Developed by Zihan. All rights reserved.</a>
+</div>
+
+</html>

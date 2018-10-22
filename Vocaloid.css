@@ -1,0 +1,609 @@
+body{
+    margin: auto;
+    width:100%;
+    height:100%;
+    font-family: 'Times New Roman', Times, serif;
+    position: relative;
+
+}
+/* borders for embeded video */
+iframe{
+    border: 1px solid white;
+    border-radius: 5px 5px 5px 5px;
+}
+
+@media (max-width: 768px) {
+
+    body {
+        background-color: #f0f0f0;
+        background: url('./images/bg/V_A.png');
+        background-attachment: fixed;
+    }
+    
+}
+
+/* background image */
+ul li{
+    list-style: none;
+}
+
+.cb-slideshow li span {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    color: transparent;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: none;
+    opacity: 0;
+    z-index: -999;
+    -webkit-backface-visibility: hidden;
+    -webkit-animation: imageAnimation 48s linear infinite 0s;
+    -moz-animation: imageAnimation 48s linear infinite 0s;
+    -o-animation: imageAnimation 48s linear infinite 0s;
+    -ms-animation: imageAnimation 48s linear infinite 0s;
+    animation: imageAnimation 48s linear infinite 0s;
+}
+
+@keyframes imageAnimation {
+    0% {
+        opacity: 0;
+        animation-timing-function: ease-in;
+    }
+    8% {
+        opacity: 1;
+        transform: scale(1);
+        animation-timing-function: ease-out;
+    }
+    17% {
+        opacity: 1;
+        transform: scale(1) rotate(0deg);
+    }
+    25% {
+        opacity: 0;
+        transform: scale(1) rotate(0deg);
+    }
+    100% {
+        opacity: 0
+    }
+}
+
+.cb-slideshow li:nth-child(1) span {
+}
+
+.cb-slideshow li:nth-child(2) span {
+    animation-delay: 8s;
+}
+
+.cb-slideshow li:nth-child(3) span {
+    animation-delay: 16s;
+}
+
+.cb-slideshow li:nth-child(4) span {
+    animation-delay: 24s;
+}
+
+.cb-slideshow li:nth-child(5) span {
+    animation-delay: 32s;
+}
+
+.cb-slideshow li:nth-child(6) span {
+    animation-delay: 40s;
+}
+
+
+
+
+
+
+
+/* header */
+header ul li{
+    list-style: none;
+}
+
+header{
+    margin: 0px;
+    padding: 0px;
+    opacity: 0.97;
+    font-size: 16px;
+}
+header ul{
+    list-style-type: none;
+    overflow: hidden;
+    background-color:rgb(235, 231, 231);
+}
+
+header li{
+    float:left;
+}
+
+header li a{
+    display: inline-block;
+    color: rgb(44, 45, 46);
+    text-align:center;
+    padding: 14px 16px;
+}
+
+header li a:hover {
+     background-color: rgb(212, 211, 211);
+     text-decoration: none;
+     text-decoration-color: none;
+}
+
+/* Tabs */
+
+
+/* Style the icon bar and set the welcome content for users */
+#container {
+    margin-left:5%;
+    margin-right:5%;
+    color: rgb(44, 45, 46);
+    margin-top:20px;
+}
+
+
+.iconbar {
+    width:100%;
+    overflow: auto;
+    margin-top: 5%;
+    border: 1px solid white;
+    border-radius: 5px 5px 5px 5px;
+    background-color: rgb(235, 231, 231);
+    opacity: 0.95;
+    text-align: center;
+}
+
+.iconbar .Rin{
+    width:20%;
+    vertical-align: bottom;
+    display: table-cell;
+}
+.iconbar a{
+    color: rgb(44, 45, 46);
+    display: table-cell;
+    text-decoration: none;
+    padding:5px 15px;
+}
+
+.iconbar a:hover{
+    text-decoration: none;
+}
+.iconbar #link a{
+    font-size:17px;
+    background-color: #ddd;
+    border: 1px solid white;
+    border-radius: 5px 5px 5px 5px;
+}
+
+
+.iconbar .Luka{
+    width:20%;
+    vertical-align: bottom;
+    display: table-cell;
+}
+
+.iconbar .Teto{
+    width:20%;
+    vertical-align: bottom;
+    display: table-cell;
+}
+
+.iconbar .Miku{
+    width:20%;
+    vertical-align: bottom;
+    display: table-cell;
+}
+.iconbar .Meiko{
+    width:20%;
+    vertical-align: bottom;
+    display: table-cell;
+}
+
+
+/* content of each character */
+#containerT{
+    margin-left:15%;
+    margin-right:15%;
+    color: rgb(44, 45, 46);
+    margin-top:10%;
+    opacity: 0.98;
+}
+
+#containerV{
+    margin-left:20%;
+    margin-right:20%;
+    color: rgb(44, 45, 46);
+    margin-top:5%;
+    opacity: 0.98;
+}
+
+    /* Miku one */
+#TMiku
+{
+    width:100%;
+    overflow: auto;
+    border: 1px solid white;
+    border-radius: 5px 5px 5px 5px;
+    background-image: url("./images/Voca/VM1.jpeg");
+    color: transparent;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: none;
+    background-attachment: fixed;
+    
+    opacity: 0.95;
+    text-align: center;
+    font-size: 15px;
+}
+
+#TMiku .para h1{
+    color: rgb(44, 175, 147);
+    margin: 0;
+    padding: 0;
+}
+#TMiku .para h2{
+    color: rgb(44, 175, 147);
+    margin: 0;
+    padding:0;
+}
+
+#TMiku .para h3{
+    margin: 0;
+    padding: 0;
+    color:rgb(44, 175, 147);
+}
+
+#VMiku{
+    width:100%;
+    overflow: auto;
+    border: 1px solid white;
+    border-radius: 5px 5px 5px 5px;
+    background-color: rgb(235, 231, 231);
+    opacity: 0.98;
+    text-align: center;
+    font-size: 15px;
+}
+#LE{
+    width:50%;
+    vertical-align: text-top;
+    display: table-cell;
+}
+
+#LJ{
+    width:50%;
+    vertical-align: text-top;
+    display: table-cell;
+}
+
+#VMiku h1{
+    color: rgb(44, 175, 147);
+}
+#VMiku h2{
+    color: rgb(44, 175, 147);
+}
+
+#VMiku h3{
+    color:rgb(44, 175, 147);
+}
+
+#VMiku .para{
+    text-align: center;
+}
+
+/* Luka */
+#TLuka
+{
+    width:100%;
+    overflow: auto;
+    border: 1px solid white;
+    border-radius: 5px 5px 5px 5px;
+    background-image: url("./images/Voca/VL1.jpg");
+    color: transparent;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: none;
+    background-attachment: fixed;
+    
+    opacity: 0.95;
+    text-align: center;
+    font-size: 15px;
+}
+
+#TLuka .para h1{
+    color: rgb(218, 36, 127);
+    margin: 0;
+    padding: 0;
+}
+#TLuka .para h2{
+    color: rgb(218, 36, 127);
+    margin: 0;
+    padding:0;
+}
+
+#TLuka .para h3{
+    margin: 0;
+    padding: 0;
+    color:rgb(218, 36, 127);
+}
+
+#VLuka{
+    width:100%;
+    overflow: auto;
+    border: 1px solid white;
+    border-radius: 5px 5px 5px 5px;
+    background-color: rgb(235, 231, 231);
+    opacity: 0.98;
+    text-align: center;
+    font-size: 15px;
+}
+#VLuka h1{
+    color: rgb(218, 36, 127);
+}
+#VLuka h2{
+    color:rgb(218, 36, 127);
+}
+
+#VLuka h3{
+    color:rgb(218, 36, 127);
+}
+
+#VLuka .para{
+    text-align: center;
+}
+
+
+
+/* Teto */
+#TTeto
+{
+    width:100%;
+    overflow: auto;
+    border: 1px solid white;
+    border-radius: 5px 5px 5px 5px;
+    background-image: url("./images/Voca/VT1.jpg");
+    color: transparent;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: none;
+    background-attachment: fixed;
+    
+    opacity: 0.95;
+    text-align: center;
+    font-size: 15px;
+}
+
+#TTeto .para h1{
+    color: rgb(212, 48, 37);
+    margin: 0;
+    padding: 0;
+}
+#TTeto .para h2{
+    color: rgb(212, 48, 37);
+    margin: 0;
+    padding:0;
+}
+
+#TTeto .para h3{
+    margin: 0;
+    padding: 0;
+    color:rgb(212, 48, 37);
+}
+
+#VTeto{
+    width:100%;
+    overflow: auto;
+    border: 1px solid white;
+    border-radius: 5px 5px 5px 5px;
+    background-color: rgb(235, 231, 231);
+    opacity: 0.98;
+    text-align: center;
+    font-size: 15px;
+}
+#VTeto h1{
+    color: rgb(212, 48, 37);
+}
+#VTeto h2{
+    color:rgb(212, 48, 37);
+}
+
+#VTeto h3{
+    color:rgb(212, 48, 37);
+}
+
+#VTeto .para{
+    text-align: center;
+}
+
+
+
+/* Rin */
+#TRin
+{
+    width:100%;
+    overflow: auto;
+    border: 1px solid white;
+    border-radius: 5px 5px 5px 5px;
+    background-image: url("./images/Voca/VR1.jpg");
+    color: transparent;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: none;
+    background-attachment: fixed;
+    
+    opacity: 0.95;
+    text-align: center;
+    font-size: 15px;
+}
+
+#TRin .para h1{
+    color: rgb(255, 168, 5);
+    margin: 0;
+    padding: 0;
+}
+#TRin .para h2{
+    color: rgb(255, 168, 5);
+    margin: 0;
+    padding:0;
+}
+
+#TRin .para h3{
+    margin: 0;
+    padding: 0;
+    color:rgb(255, 168, 5);
+}
+
+#VRin{
+    width:100%;
+    overflow: auto;
+    border: 1px solid white;
+    border-radius: 5px 5px 5px 5px;
+    background-color: rgb(235, 231, 231);
+    opacity: 0.98;
+    text-align: center;
+    font-size: 15px;
+}
+#VRin h1{
+    color: rgb(255, 168, 5);
+}
+#VRin h2{
+    color:rgb(255, 168, 5);
+}
+
+#VRin h3{
+    color:rgb(255, 168, 5);
+}
+
+#VRin .para{
+    text-align: center;
+}
+
+/* Meiko */
+#TMeiko
+{
+    width:100%;
+    overflow: auto;
+    border: 1px solid white;
+    border-radius: 5px 5px 5px 5px;
+    background-image: url("./images/Voca/VK1.jpg");
+    color: transparent;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: none;
+    background-attachment: fixed;
+    
+    opacity: 0.95;
+    text-align: center;
+    font-size: 15px;
+}
+
+#TMeiko .para h1{
+    color: rgb(255, 5, 5);
+    margin: 0;
+    padding: 0;
+}
+#TMeiko .para h2{
+    color: rgb(5, 30, 255);
+    margin: 0;
+    padding:0;
+}
+
+#TMeiko .para h3{
+    margin: 0;
+    padding: 0;
+    color:rgb(5, 30, 255);
+}
+
+#VMeiko{
+    width:100%;
+    overflow: auto;
+    border: 1px solid white;
+    border-radius: 5px 5px 5px 5px;
+    background-color: rgb(235, 231, 231);
+    opacity: 0.98;
+    text-align: center;
+    font-size: 15px;
+}
+#Meiko h1{
+    color: rgb(255, 5, 5);
+}
+#VMeiko h2{
+    color:rgb(255, 5, 5);
+}
+
+#VMeiko h3{
+    color:rgb(5, 30, 255);
+}
+
+#VMeiko .para{
+    text-align: center;
+}
+
+
+/*  button back to top*/
+.arrow{
+    border: 18px solid transparent;
+    border-bottom-color: rgb(44, 45, 46);
+    width: 0px;
+    height: 0px;
+    top:0px
+}
+.stick{
+    width: 16px;
+    height: 24px;
+    border-radius: 2px;
+    background-color: rgb(44, 45, 46);
+    top:30px;
+}
+#gotop div{
+    position: absolute;
+    margin: auto;
+    right: 0px;
+    left: 0px;
+}
+#gotop{
+    background-color: rgb(235, 231, 231);
+    height: 76px;
+    width: 76px;
+    border-radius: 6px;
+    display: block;
+    cursor: pointer;
+    position: fixed;
+    right: 5%;
+    bottom: 10%;
+    display: none;
+}
+
+
+
+
+/*footer*/
+#footer {
+    border-radius: 5px;
+    font-size: 14px;
+    position: absolute;
+    left: 50%;
+    bottom: -30px;
+    text-align: center;
+    text-decoration: aqua;
+    background-color:rgb(44, 46, 46);
+    color: #ddd;
+    padding: 5px;
+    margin-top: 50px;
+    transform: translate(-50%,0); 
+}
+
+#footer a {
+        background-color: rgb(44, 45, 46);
+        color:rgb(229, 226, 226);
+        text-decoration: none;
+        padding: 0 3px 0 3px;
+    }
+
+#footer a:hover {
+            background-color: #555;
+            color: #ddd;
+            text-decoration: underline;
+        }

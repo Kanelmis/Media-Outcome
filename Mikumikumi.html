@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<title>Mikumikumi</title>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="keywords" content="MIKU,VOCALOID,HATSUNE MIKU PROJECT DIVA SERIES,ILLUSTRATION">
+    <meta name="description" content="Hope all the people can find something making you guys enjoy here （〃＾∇＾）o_彡☆">
+    <meta name="author" conten="Zihan Zhong">
+    <meta name="viewpoint" content="width=device-width, inital-sacle=1.0">
+    <link rel="icon" type="image" href="./images/LogoMikumikumi.png">
+    <link rel="stylesheet" type="text/css" href="Mikumikumi.css">
+    <script type="text/javascript" src="raphael.min.js"></script>
+    <script type="text/javascript" src="raphael.icons.min.js"></script>
+    <script type="text/javascript" src="wheelnav.min.js"></script>
+</head>
+
+<body>
+    <section class="hidden-xs">
+                <ul class="cb-slideshow">
+                    <li><span style="background-image: url('./images/bg/4.png')"></span></li>
+                    <li><span style="background-image: url('./images/bg/5.png')"></span></li>
+                    <li><span style="background-image: url('./images/bg/3.png')"></span></li>
+                    <li><span style="background-image: url('./images/bg/2.png')"></span></li>
+                    <li><span style="background-image: url('./images/bg/1.png')"></span></li>
+                    <li><span style="background-image: url('./images/bg/0.png')"></span></li>
+                </ul>
+    </section>
+    <div id='piemenu' data-wheelnav
+        data-wheelnav-slicepath='DonutSlice'
+        data-wheelnav-spreader data-wheelnav-spreaderpath='FlowerSpreader'
+        data-wheelnav-marker data-wheelnav-markerpath='TriangleMarker'
+        data-wheelnav-navangle='270'
+        data-wheelnav-titleheight='50'
+        data-wheelnav-cssmode 
+        data-wheelnav-init> 
+       
+        <div data-wheelnav-navitemtext='Vocaloid'></div>
+
+        <div data-wheelnav-navitemtext='Photo_Gallery'></div>
+
+        <div data-wheelnav-navitemtext='Mikumikudance'></div>
+        
+        <div data-wheelnav-navitemtext='ProjectDIVASeries' ></div>
+
+        
+    </div>
+
+    <div class="navigator" >
+        <a href ="HomePage.html"><img src="./images/Nav_Button/Nav_ClickButton.png" alt="Welcome friends!!" width="175" height=""></a>
+    </div>
+
+    <div class="Nav_Char">
+        <img src="./images/Nav_Button/Nav_Miku.png" alt="Miiiiiiku" width ="1000" height="1000">
+    </div>
+    
+
+    <script>
+                var piemenu = new wheelnav('piemenu');
+                piemenu.spreaderInTitle = icon.plus;
+                piemenu.spreaderOutTitle = icon.cross;
+                piemenu.spreaderRadius = piemenu.wheelRadius * 0.34;
+                piemenu.clockwise = false;
+                piemenu.wheelRadius = piemenu.wheelRadius * 1;
+                piemenu.createWheel();
+
+                
+    </script>
+
+    <div id="footer">
+                    <a>Developed by Zihan. All rights reserved.</a>
+    </div>
+</body>
+
+</html>

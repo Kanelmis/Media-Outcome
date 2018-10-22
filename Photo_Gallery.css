@@ -1,0 +1,396 @@
+body{
+    margin: auto;
+    width:100%;
+    height:100%;
+    font-family: 'Times New Roman', Times, serif;
+    position: relative;
+
+}
+/* borders for embeded video */
+iframe{
+    border: 1px solid white;
+    border-radius: 5px 5px 5px 5px;
+}
+
+@media (max-width: 768px) {
+
+    body {
+        background-color: #f0f0f0;
+        background: url('./images/bg/V_A.png');
+        background-attachment: fixed;
+    }
+    
+}
+
+/* background image */
+ul li{
+    list-style: none;
+}
+
+.cb-slideshow li span {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    color: transparent;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: none;
+    opacity: 0;
+    z-index: -999;
+    -webkit-backface-visibility: hidden;
+    -webkit-animation: imageAnimation 48s linear infinite 0s;
+    -moz-animation: imageAnimation 48s linear infinite 0s;
+    -o-animation: imageAnimation 48s linear infinite 0s;
+    -ms-animation: imageAnimation 48s linear infinite 0s;
+    animation: imageAnimation 48s linear infinite 0s;
+}
+
+@keyframes imageAnimation {
+    0% {
+        opacity: 0;
+        animation-timing-function: ease-in;
+    }
+    8% {
+        opacity: 1;
+        transform: scale(1);
+        animation-timing-function: ease-out;
+    }
+    17% {
+        opacity: 1;
+        transform: scale(1) rotate(0deg);
+    }
+    25% {
+        opacity: 0;
+        transform: scale(1) rotate(0deg);
+    }
+    100% {
+        opacity: 0
+    }
+}
+
+.cb-slideshow li:nth-child(1) span {
+}
+
+.cb-slideshow li:nth-child(2) span {
+    animation-delay: 8s;
+}
+
+.cb-slideshow li:nth-child(3) span {
+    animation-delay: 16s;
+}
+
+.cb-slideshow li:nth-child(4) span {
+    animation-delay: 24s;
+}
+
+.cb-slideshow li:nth-child(5) span {
+    animation-delay: 32s;
+}
+
+.cb-slideshow li:nth-child(6) span {
+    animation-delay: 40s;
+}
+
+
+
+
+
+
+
+/* header */
+header ul li{
+    list-style: none;
+}
+
+header{
+    margin: 0px;
+    padding: 0px;
+    opacity: 0.97;
+    font-size: 16px;
+}
+header ul{
+    list-style-type: none;
+    overflow: hidden;
+    background-color:rgb(235, 231, 231);
+}
+
+header li{
+    float:left;
+}
+
+header li a{
+    display: inline-block;
+    color: rgb(44, 45, 46);
+    text-align:center;
+    padding: 14px 16px;
+}
+
+header li a:hover {
+     background-color: rgb(212, 211, 211);
+     text-decoration: none;
+     text-decoration-color: none;
+}
+
+/* slide */
+
+img {
+    vertical-align: middle;
+    border: 1px solid white;
+    border-radius: 5px 5px 5px 5px;
+  }
+  
+  /* Position the image container (needed to position the left and right arrows) */
+  
+  /* Hide the images by default */
+ .mySlides {
+    display: none;
+  }
+  
+  /* Add a pointer when hovering over the thumbnail images */
+ .cursor {
+    cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+ .prev{
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+ .next {
+    cursor: pointer;
+    position: absolute;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0%;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  #TMiku .prev:hover{
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  #TMiku .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+.row {
+    margin-top: 2%;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Six columns side by side */
+ .column {
+    float: left;
+    width: 16.66%;
+  }
+  
+  /* Add a transparency effect for thumnbail images */
+.demo {
+    opacity: 0.6;
+  }
+  
+.active,
+#containerT .demo:hover {
+    opacity: 1;
+  }
+/* Tabs */
+* {
+    box-sizing: border-box;
+}
+
+/* Center website */
+.main {
+    max-width: 1000px;
+    width:100%;
+    margin: auto;
+    border-radius: 5px 5px 0px 0px;
+    text-align: center;
+}
+
+.main h1 {
+    font-size: 50px;
+    word-break: break-all;
+}
+
+.main .row {
+    margin: 10px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.main .row,
+.main .row > .column {
+    padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.main .column {
+    float: left;
+    width: 33.33%;
+    display: none; /* Hide all elements by default */
+}
+
+/* Clear floats after rows */ 
+ .main .row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Content */
+.content {
+    background-color: white;
+    padding: 10px;
+}
+
+/* The "show" class is added to the filtered elements */
+.main .show {
+  display: block;
+}
+
+/* Style the buttons */
+.main .btn {
+  width:16.3%;
+  outline: none;
+  border: none;
+  outline: none;
+  padding: 14px 16px;
+  background-color: #ccc;
+  cursor: pointer;
+  transition:0.3s;
+  font-size: 17px;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.main .btn.active {
+  background-color: #666;
+  color: white;}
+
+
+/* content of each character */
+#containerT{
+    margin-left:15%;
+    margin-right:15%;
+    color: rgb(44, 45, 46);
+    margin-top:3%;
+}
+
+    /* Miku one */
+#TMiku
+{
+    width:100%;
+    height: 100%;
+    margin-top: 3%;
+    overflow: hidden;
+    color: transparent;
+    text-align: center;
+    font-size: 15px;
+    position: relative;
+}
+
+
+/*  button back to top*/
+.arrow{
+    border: 18px solid transparent;
+    border-bottom-color: rgb(44, 45, 46);
+    width: 0px;
+    height: 0px;
+    top:0px
+}
+.stick{
+    width: 16px;
+    height: 24px;
+    border-radius: 2px;
+    background-color: rgb(44, 45, 46);
+    top:30px;
+}
+#gotop div{
+    position: absolute;
+    margin: auto;
+    right: 0px;
+    left: 0px;
+}
+#gotop{
+    background-color: rgb(235, 231, 231);
+    height: 76px;
+    width: 76px;
+    border-radius: 6px;
+    display: block;
+    cursor: pointer;
+    position: fixed;
+    right: 5%;
+    bottom: 10%;
+    display: none;
+}
+
+#img-boxH{
+    width:100%;
+    height:200px;
+    overflow: scroll;
+    border-radius: 2px, 2px,2px,2px;
+}
+
+#img-boxV{
+    width:100%;
+    height:500px;
+    overflow: scroll;
+    border-radius: 2px, 2px,2px,2px;
+}
+
+/*footer*/
+#footer {
+    border-radius: 5px;
+    font-size: 14px;
+    position: absolute;
+    left: 50%;
+    bottom: -30px;
+    text-align: center;
+    text-decoration: aqua;
+    background-color:rgb(44, 46, 46);
+    color: #ddd;
+    padding: 5px;
+    margin-top: 50px;
+    transform: translate(-50%,0); 
+}
+
+#footer a {
+        background-color: rgb(44, 45, 46);
+        color:rgb(229, 226, 226);
+        text-decoration: none;
+        padding: 0 3px 0 3px;
+    }
+
+#footer a:hover {
+            background-color: #555;
+            color: #ddd;
+            text-decoration: underline;
+        }
